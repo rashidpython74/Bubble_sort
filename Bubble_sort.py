@@ -22,7 +22,3 @@ def bubble_sort(array):
                 array[j] = array[j+1] - array[j]
     return array
 
-unsorted_array = array_maker()
-sorted_array = bubble_sort(unsorted_array)
-print(f"The Sorted Array is: {sorted_array}")
-
