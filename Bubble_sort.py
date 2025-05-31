@@ -1,7 +1,13 @@
 
 def array_maker():
     array = list()
-    size = int(input("Enter the size of the array: "))
+    while True:
+        try:
+            size = input("Enter the size of the array: ")
+            size = int(size)
+            break
+        except:
+            print("Please Enter the Size for array in Integer")
     i = 0
     while i < size:
         element = (input(f"Enter element at index {i+1}: "))
